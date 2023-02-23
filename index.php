@@ -50,8 +50,25 @@
         }
 
         echo "<hr>";
+        // 3 uzduotis
+
+        $a = rand(0, 25);
+        $b = rand(0, 25);
+        $c = rand(0, 25);
+
+        echo $a . " " . $b . " " . $c;
+        echo "<br>";
 
 
+        if ($a > $b and $b > $c or $a < $b and $b < $c) {
+            echo $b;
+        } else if ($b > $a and $a > $c or $b < $a and $a < $c) {
+            echo $a;
+        } else if ($b > $c and $c > $a or $b < $c and $c < $a) {
+            echo $c;
+        } else {
+            echo "kita";
+        }
 
 
     ?>
