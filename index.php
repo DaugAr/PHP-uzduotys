@@ -91,9 +91,75 @@
 
         // 5 uzduotis
 
+        $a1 = rand(0, 2);
+        $a2 = rand(0, 2);
+        $a3 = rand(0, 2);
+        $a4 = rand(0, 2);
+
+        echo $a1 . " " . $a2. " " . $a3 . " " . $a4;
+
+        $nulis = 0;
+        $vienas = 0;
+        $du = 0;
+
+        if ($a1 == 0) {
+            $nulis++;
+        }
+
+        if ($a1 == 1) {
+            $vienas++;
+        }
+
+        if ($a1 == 2) {
+            $du++;
+        }
 
 
+        if ($a2 == 0) {
+            $nulis++;
+        }
 
+        if ($a2 == 1) {
+            $vienas++;
+        }
+
+        if ($a2 == 2) {
+            $du++;
+        }
+
+
+        if ($a3 == 0) {
+            $nulis++;
+        }
+
+        if ($a3 == 1) {
+            $vienas++;
+        }
+
+        if ($a3 == 2) {
+            $du++;
+        }
+
+
+        if ($a4 == 0) {
+            $nulis++;
+        }
+
+        if ($a4 == 1) {
+            $vienas++;
+        }
+
+        if ($a4 == 2) {
+            $du++;
+        }
+
+        echo "<br>";
+        echo "nuliai:" . $nulis . " vienetai:" . $vienas . " dvejetai:" . $du;
+
+
+        echo "<hr>";
+
+        // 6 uzduotis
 
     ?>
     <!-- <h1>Va ir veikia</h1>
