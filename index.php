@@ -70,6 +70,30 @@
             echo "kita";
         }
 
+        echo "<hr>";
+
+        // 4 uzduotis
+
+        $aa = rand(1, 10);
+        $bb = rand(1, 10);
+        $cc = rand(1, 10);
+
+        if (($aa + $bb > $cc) && ($aa + $cc > $bb) && ($cc + $bb > $aa)) {
+            echo $aa . " " . $bb . " " . $cc;
+            echo "<br>";
+            echo "Trikampis galimas";
+        } else {
+            echo "Trikampis negalimas";
+        }
+
+
+        echo "<hr>";
+
+        // 5 uzduotis
+
+
+
+
 
     ?>
     <!-- <h1>Va ir veikia</h1>
