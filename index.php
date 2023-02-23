@@ -29,22 +29,30 @@
 
         $amzius = $sia_data - $gimimo_metai;
 
-        echo "Aš esu $vardas $pavarde. Man yra $amzius metai(ų).";
+        echo "<h1>" . "Aš esu $vardas $pavarde. Man yra $amzius metai(ų)." . "</h1>";
 
         echo "<hr>";
 
         $num1 = rand(0, 4);
         $num2 = rand(0, 4);
 
-        if ($num1 > $num2 and $num1 != 0 and $num2 != 0) {
+        echo $num1 . " " . $num2;
+        echo "<br>";
+
+        if ($num1 >= $num2 and $num1 != 0 and $num2 != 0) {
             $result = $num1 / $num2;
-        } else if ($num2 > $num1 and $num1 != 0 and $num2 != 0) {
+            echo round($result, 2);
+        } else if ($num2 >= $num1 and $num1 != 0 and $num2 != 0) {
             $result = $num2 / $num1;
+            echo round($result, 2);
         } else {
-            $result = 0;
+            echo "Dalyba negalima iš 0";
         }
 
-        echo round($result, 2);
+        echo "<hr>";
+
+
+
 
     ?>
     <!-- <h1>Va ir veikia</h1>
