@@ -22,16 +22,16 @@
         // echo "<hr>"; 
 
         
-        $vardas = "Arnas";
-        $pavarde = "Daugela";
-        $gimimo_metai = 1988;
-        $sia_data = date('Y');
+        // $vardas = "Arnas";
+        // $pavarde = "Daugela";
+        // $gimimo_metai = 1988;
+        // $sia_data = date('Y');
 
-        $amzius = $sia_data - $gimimo_metai;
+        // $amzius = $sia_data - $gimimo_metai;
 
-        echo "<h1>" . "Aš esu $vardas $pavarde. Man yra $amzius metai(ų)." . "</h1>";
+        // echo "<h1>" . "Aš esu $vardas $pavarde. Man yra $amzius metai(ų)." . "</h1>";
 
-        echo "<hr>";
+        // echo "<hr>";
 
         $num1 = rand(0, 4);
         $num2 = rand(0, 4);
@@ -160,6 +160,125 @@
         echo "<hr>";
 
         // 6 uzduotis
+        // Naudokite funkcija rand(). Sugeneruokite atsitiktinį skaičių nuo 1 iki 6 ir jį atspausdinkite atitinkame h tage. Pvz skaičius 3- rezultatas: <h3>3</h3>
+        
+        $s = rand(1, 6);
+
+        echo "<h$s>$s</h$s>";
+
+        echo "<hr>";
+
+        // 7 uzduotis
+        // Naudokite funkcija rand(). Atspausdinkite 3 skaičius nuo -10 iki 10. Skaičiai mažesni už 0 turi būti žali, 0 - raudonas, didesni už 0 mėlyni. 
+
+        $skaicius1 = rand(-10, 10);
+        $skaicius2 = rand(-10, 10);
+        $skaicius3 = rand(-10, 10);
+
+        echo $skaicius1 . " " . $skaicius2 . " " . $skaicius3;
+
+        echo "<br>";
+
+        if ($skaicius1 < 0) {
+            $color1 = "green";
+          } elseif ($skaicius1 == 0) {
+            $color1 = "red";
+          } else {
+            $color1 = "blue";
+          }
+          
+          if ($skaicius2 < 0) {
+            $color2 = "green";
+          } elseif ($skaicius2 == 0) {
+            $color2 = "red";
+          } else {
+            $color2 = "blue";
+          }
+          
+          if ($skaicius3 < 0) {
+            $color3 = "green";
+          } elseif ($skaicius3 == 0) {
+            $color3 = "red";
+          } else {
+            $color3 = "blue";
+          }
+          
+          echo "<span style='color: $color1;'>$skaicius1</span>, <span style='color: $color2;'>$skaicius2</span>, <span style='color: $color3;'>$skaicius3</span>";
+
+          echo "<hr>";
+
+
+          // 2-1 uzduotis
+
+        //   Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus (Jonas Jonaitis). Atspausdinti trumpesnį stringą.
+
+        $vardas = "Jonas";
+        $pavarde = "Jonaitis";
+
+        if (strlen($vardas) < strlen($pavarde)) {
+            echo $vardas;
+        } else {
+            echo $pavarde;
+        }
+
+        echo "<hr>";
+
+        // 2-2 uzduotis
+
+        // Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Vardą atspausdinti tik didžiosiom raidėm, o pavardę tik mažosioms.
+
+        $vardas = "Brad";
+        $pavarde = "Pitt";
+
+        echo strtoupper($vardas);
+        echo strtolower($pavarde);
+
+        echo "<hr>";
+
+
+        // 2-3 uzduotis
+
+        // Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš pirmų vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+
+        $vardas = "Brad";
+        $pavarde = "Pitt";
+        $inicialai = substr($vardas,0,1) . substr($pavarde,0,1);
+        echo $inicialai;
+
+        echo "<hr>";
+
+        // 2-4 uzduotis
+
+        // Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavardę kaip stringus. Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės kintamųjų raidžių. Jį atspausdinti.
+
+        $vardas = "Brad";
+        $pavarde = "Pitt";
+        $inicialai = substr($vardas, -3) . substr($pavarde, -3);
+        echo $inicialai;
+
+        echo "<hr>";
+
+        // 2-5 uzduotis
+
+        // Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
+
+        $name = "An American in Paris";
+        $name1 = strtolower($name);
+        $replaces = array("a");
+        $to = array("*");
+        echo str_replace($replaces, $to, $name1);  
+
+        echo "<hr>";
+        
+        // 2-6 uzduotis
+
+        // Sukurti kintamąjį su stringu: “An American in Paris”. Suskaičiuoti visas “a” (didžiąsias ir mažąsias) raides. Rezultatą atspausdinti.
+
+
+
+
+
+
 
     ?>
     <!-- <h1>Va ir veikia</h1>
