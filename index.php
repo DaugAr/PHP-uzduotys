@@ -274,10 +274,31 @@
 
         // Sukurti kintamąjį su stringu: “An American in Paris”. Suskaičiuoti visas “a” (didžiąsias ir mažąsias) raides. Rezultatą atspausdinti.
 
+        $name = "An American in Paris";
+        $skaicius = substr_count(strtolower($name), 'a');
+        echo $skaicius;
 
 
+        // 2-7 uzduotis
+        
+        // Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+        
+
+        // ciklai PHP
 
 
+        // $text = "labas";
+
+        // for ($i=0; $i < strlen($text); $i++) { 
+        //     echo $text[$i] . "<br>";
+        // }
+
+        // echo "<hr>";
+
+        // foreach ($arr as $key => $letter) {
+        //     echo $letter . "<br>";
+        // }
 
 
     ?>
