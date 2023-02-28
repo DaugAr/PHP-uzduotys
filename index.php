@@ -283,7 +283,25 @@
         
         // Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
 
-        
+        $String1 = "An American in Paris";
+        $beBalsiu1 = str_replace(array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'), '', $String1);
+        echo $beBalsiu1;
+        echo "<br>";
+
+
+        $String2 = "Breakfast at Tiffany's";
+        $String3 = "2001: A Space Odyssey";
+        $String4 = "It's a Wonderful Life";
+
+        $beBalsiu2 = str_replace(array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'), '', $String2);
+        $beBalsiu3 = str_replace(array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'), '', $String3);
+        $beBalsiu4 = str_replace(array('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'), '', $String4);
+
+        echo $beBalsiu2;
+        echo "<br>";
+        echo $beBalsiu3;
+        echo "<br>";
+        echo $beBalsiu4;
 
         // ciklai PHP
 
